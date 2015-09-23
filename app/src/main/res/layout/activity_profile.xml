@@ -6,26 +6,58 @@
     android:weightSum="1">
 
     <LinearLayout
-        android:orientation="horizontal"
+        tools:context="com.example.sandilemazibuko.grooveapp_beta_01.Login"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.33"
-        android:id="@+id/profile_image"></LinearLayout>
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/home_bg"
+        android:padding="30dp" >
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.13"
-        android:background="#80CBC4">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/textView5" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/main_groove" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Welcome To"
+                android:id="@+id/textView5"
+                android:paddingBottom="12dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="GrooveApp Beta V.1"
+                android:id="@+id/textView6"
+                android:paddingBottom="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ddd" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go To Map"
+                android:id="@+id/btnMap"
+                android:layout_gravity="center_horizontal"
+                android:background="#39daf7" />
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

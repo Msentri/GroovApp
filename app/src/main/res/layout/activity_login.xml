@@ -135,7 +135,8 @@
                                 android:ems="10"
                                 android:id="@+id/txtpass"
                                 android:layout_gravity="center_horizontal"
-                                android:text="Password" />
+                                android:text="Password"
+                                android:textColor="#fff" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>

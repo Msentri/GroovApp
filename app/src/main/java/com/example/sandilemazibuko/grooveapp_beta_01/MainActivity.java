@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         userDatabase = new LocalStorage(this);
 
+        userDatabase.clearUserData();
+
         if(userDatabase.isLoggedin() == true){
 
             super.onCreate(savedInstanceState);
@@ -87,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "FAQ's", Toast.LENGTH_SHORT).show();
         }else if(id == R.id.action_logout){
             userDatabase.clearUserData();
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

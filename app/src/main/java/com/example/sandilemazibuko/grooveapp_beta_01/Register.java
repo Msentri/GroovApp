@@ -167,7 +167,7 @@ public class Register extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_profile, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -192,7 +192,7 @@ public class Register extends AppCompatActivity {
             Toast.makeText(Register.this, "FAQ's", Toast.LENGTH_SHORT).show();
         }else if(id == R.id.action_logout){
             userDatabase.clearUserData();
-            Intent intent = new Intent(Register.this, Login.class);
+            Intent intent = new Intent(Register.this, MainActivity.class);
             startActivity(intent);
         }
 

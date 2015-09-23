@@ -18,6 +18,18 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        /**
+         * go to map fragment
+         * */
+        Button goToMap = (Button) findViewById(R.id.btnMap);
+        goToMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     /**
@@ -39,12 +51,11 @@ public class Profile extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         userDatabase = new LocalStorage(this);
 
-
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(Profile.this, "Settidsfsfsdngs", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Profile.this, "Settings", Toast.LENGTH_SHORT).show();
         }else if(id == R.id.action_about_this_app){
             Toast.makeText(Profile.this, "About This App", Toast.LENGTH_SHORT).show();
         }else if(id == R.id.action_instructions){
@@ -53,7 +64,7 @@ public class Profile extends AppCompatActivity {
             Toast.makeText(Profile.this, "FAQ's", Toast.LENGTH_SHORT).show();
         }else if(id == R.id.action_logout){
             userDatabase.clearUserData();
-            Intent intent = new Intent(Profile.this, Login.class);
+            Intent intent = new Intent(Profile.this, MainActivity.class);
             startActivity(intent);
         }
 
