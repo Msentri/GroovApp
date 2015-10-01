@@ -22,14 +22,14 @@ public class LocalStorage {
      * */
     public void storeUserDetailsOnPreference(User user){
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("id",user.id);
-        editor.putString("name",user.name);
-        editor.putString("surname",user.surname);
-        editor.putString("idNumber",user.idNumber);
-        editor.putString("email",user.email);
-        editor.putString("cellphone",user.cellphone);
-        editor.putString("username",user.username);
-        editor.putString("password",user.password);
+        editor.putString("user_id",user.user_id);
+        editor.putString("user_name",user.user_name);
+        editor.putString("user_surname",user.user_surname);
+        editor.putString("user_picture",user.user_picture);
+        editor.putString("user_password",user.user_password);
+        editor.putString("user_email",user.user_password);
+        editor.putString("user_dob",user.user_dob);
+        editor.putString("user_membership_type",user.user_membership_type);
         editor.commit();
     }
 
@@ -39,7 +39,7 @@ public class LocalStorage {
     public boolean isLoggedin(){
 
         String Default = "N/A";
-        String id = sharedPreferences.getString("id",Default);
+        String id = sharedPreferences.getString("user_id",Default);
         if(!id.equals("N/A")){
             return true;
         }else{

@@ -5,98 +5,114 @@ package com.example.sandilemazibuko.grooveapp_beta_01;
  */
 public class User {
 
+    String user_id;
+    String user_name;
+    String user_surname;
+    String user_picture;
+    String user_password;
+    String user_email;
+    String user_dob;
+    String user_membership_type;
 
-
-    public String id;
-    public String name;
-    public String surname;
-    public String idNumber;
-    public String email;
-    public String cellphone;
-    public String username;
-
-    public User(String id,String name,String surname, String idNumber,
-                String email,String cellphone,String username, String password){
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.idNumber = idNumber;
-        this.email = email;
-        this.cellphone = cellphone;
-        this.username = username;
-        this.password = password;
+    public User(String user_id, String user_name,
+                String user_surname, String user_picture,
+                String user_password, String user_email,
+                String user_dob, String user_membership_type) {
+        this.user_id = user_id;
+        this.user_name = user_name;
+        this.user_surname = user_surname;
+        this.user_picture = user_picture;
+        this.user_password = user_password;
+        this.user_email = user_email;
+        this.user_dob = user_dob;
+        this.user_membership_type = user_membership_type;
     }
 
-    public User(){
 
-    }
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String setPassword(String password) {
-        this.password = password;
-        return password;
+    @Override
+    public String toString() {
+        return "User{" +
+                "user_id='" + user_id + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", user_surname='" + user_surname + '\'' +
+                ", user_picture='" + user_picture + '\'' +
+                ", user_password='" + user_password + '\'' +
+                ", user_email='" + user_email + '\'' +
+                ", user_dob='" + user_dob + '\'' +
+                ", user_membership_type='" + user_membership_type + '\'' +
+                '}';
     }
 
-    public String getUsername() {
-        return username;
+
+
+    public String getUser_membership_type() {
+        return user_membership_type;
     }
 
-    public String setUsername(String username) {
-        this.username = username;
-        return username;
+    public void setUser_membership_type(String user_membership_type) {
+        this.user_membership_type = user_membership_type;
     }
 
-    public String getCellphone() {
-        return cellphone;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setCellphone(String cellphone) {
-        this.cellphone = cellphone;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public String getIdNumber() {
-        return idNumber;
+    public String getUser_surname() {
+        return user_surname;
     }
 
-    public void setIdNumber(String idNumber) {
-        this.idNumber = idNumber;
+    public void setUser_surname(String user_surname) {
+        this.user_surname = user_surname;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getUser_picture() {
+        return user_picture;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setUser_picture(String user_picture) {
+        this.user_picture = user_picture;
     }
 
-    public String getName() {
-        return name;
+    public String getUser_password() {
+        return user_password;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser_password(String user_password) {
+        this.user_password = user_password;
     }
 
-    public String password;
+    public String getUser_email() {
+        return user_email;
+    }
+
+    public void setUser_email(String user_email) {
+        this.user_email = user_email;
+    }
+
+    public String getUser_dob() {
+        return user_dob;
+    }
+
+    public void setUser_dob(String user_dob) {
+        this.user_dob = user_dob;
+    }
+
+
+
+
+
 
 
 

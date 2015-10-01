@@ -16,17 +16,6 @@ public class MainActivity extends AppCompatActivity {
     LocalStorage userDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        userDatabase = new LocalStorage(this);
-
-        userDatabase.clearUserData();
-
-        if(userDatabase.isLoggedin() == true){
-
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_profile);
-
-        }else {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
@@ -54,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-        }
+
     }
 
     /**

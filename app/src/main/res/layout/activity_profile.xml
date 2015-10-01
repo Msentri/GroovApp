@@ -23,7 +23,16 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Profile"
+                android:id="@+id/textView5"
+                android:paddingBottom="12dp"
+                android:layout_gravity="center_horizontal" />
 
             <ImageView
                 android:layout_width="fill_parent"
@@ -31,33 +40,49 @@
                 android:id="@+id/imageView4"
                 android:src="@drawable/main_groove" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Welcome To"
-                android:id="@+id/textView5"
-                android:paddingBottom="12dp"
-                android:layout_gravity="center_horizontal" />
+                android:gravity="center_horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="GrooveApp Beta V.1"
-                android:id="@+id/textView6"
-                android:paddingBottom="12dp"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#ddd" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Sandile Mazibuko"
+                    android:id="@+id/textView6" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Go To Map"
-                android:id="@+id/btnMap"
-                android:layout_gravity="center_horizontal"
-                android:background="#39daf7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Msentri@gmail.com"
+                    android:id="@+id/textView8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="1992-08-31"
+                    android:id="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Platinum"
+                    android:id="@+id/textView10" />
+            </LinearLayout>
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Restaurants on Map"
+            android:id="@+id/btnMap"
+            android:layout_gravity="center_horizontal"
+            android:background="#39daf7" />
     </LinearLayout>
 </LinearLayout>
